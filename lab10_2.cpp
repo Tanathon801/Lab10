@@ -4,11 +4,12 @@
 using namespace std;
 
 int main (){
-	string x;
+
 	ifstream source;
 	ofstream dest;
 	source.open("cheerbook.txt") ;
 	dest.open("cheerbook_copy.txt");
+	string x;
 	dest << "-------------------- BOOM ---------------------\n";
 	while(getline(source,x)){
 		dest << x <<"\n";
